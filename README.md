@@ -10,7 +10,7 @@ sudo pip install selenium psutil
 # Example
 ```python
 #!/bin/env python
-import TorSelenium
+from TorSelenium import TorSelenium
 
 # create TorSelenium object
 test = TorSelenium()
