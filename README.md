@@ -18,7 +18,7 @@ test = TorSelenium()
 # create browsers
 test.create_tor_browsers(3)
 
-# gert IP of each browser
+# get IP of each browser
 for browser in test.browsers:
 	browser.get("http://myexternalip.com/raw")
 
