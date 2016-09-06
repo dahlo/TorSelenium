@@ -73,13 +73,14 @@ if __name__ == '__main__':
 
 	# create TorBrowser object
 	test = TorSelenium()
-	
+
 	# create browsers
 	test.create_tor_browsers(3)
 
 	# gert IP of each browser
 	for browser in test.browsers:
-		browser.get("http://myexternalip.com/raw")
+		# browser.get("http://myexternalip.com/raw")
+		browser.get("http://ipinfo.io/json")
 
 	# kill running proxies
 	test.kill_running_proxies()
