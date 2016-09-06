@@ -79,7 +79,6 @@ if __name__ == '__main__':
 
 	# gert IP of each browser
 	for browser in test.browsers:
-		# browser.get("http://myexternalip.com/raw")
 		browser.get("http://ipinfo.io/json")
 
 	# kill running proxies
